@@ -1,0 +1,61 @@
+{
+  "name": "tapo-control",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for controlling TP-Link Tapo cameras via ONVIF protocol",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "tapo-discover": "./scripts/discover.js",
+    "tapo-ptz": "./scripts/ptz.js",
+    "tapo-snapshot": "./scripts/snapshot.js",
+    "tapo-preset": "./scripts/preset.js",
+    "tapo-status": "./scripts/status.js"
+  },
+  "files": [
+    "scripts/",
+    "lib/",
+    "SKILL.md",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "discover": "node scripts/discover.js",
+    "ptz": "node scripts/ptz.js",
+    "snapshot": "node scripts/snapshot.js",
+    "preset": "node scripts/preset.js",
+    "status": "node scripts/status.js",
+    "test": "node scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earino/tapo-control.git"
+  },
+  "homepage": "https://github.com/earino/tapo-control#readme",
+  "bugs": {
+    "url": "https://github.com/earino/tapo-control/issues"
+  },
+  "keywords": [
+    "tapo",
+    "tplink",
+    "tp-link",
+    "camera",
+    "onvif",
+    "ptz",
+    "security-camera",
+    "home-automation",
+    "surveillance",
+    "node",
+    "cli"
+  ],
+  "author": "Eduardo Ariño de la Rubia",
+  "license": "MIT",
+  "dependencies": {
+    "node-onvif": "^0.1.7",
+    "fluent-ffmpeg": "^2.1.2",
+    "minimist": "^1.2.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

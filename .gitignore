@@ -1,0 +1,23 @@
+node_modules/
+.env
+
+# Snapshots / images
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
